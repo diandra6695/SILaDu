@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siladu | SMKN 1 BANGSRI</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+</head>
+<body>
+    <main class="bg-white w-full h-screen">
+        <!-- navbar start -->
+        <div class="fixed w-full bg-white">
+
+            <div class="flex  justify-between md:px-16 px-5 py-4 ">
+                <div class="image md:w-[8rem] w-[6rem]">
+                    <img src="../src/img/logo.svg" alt="">
+                </div>
+                <ul class="flex gap-5">
+                    <li class="md:block hidden"><a  href="#home">Home</a></li>
+                    <li class="md:block hidden"><a href="#about">About</a></li>
+                    <li><a class="px-5 rounded-xl py-[0.60rem] bg-primary text-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfz-3_em75MxTBnA1UoQjdchBFfraftCraaSdwnLXPa7pxF1Q/viewform">Ajukan Aduan</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar stop -->
+        <section id="home">
+            <div class="container md:mx-auto mx-5 ">
+                <div class="md:h-screen h-[45rem] flex gap-10 md:flex-row flex-col justify-center items-center">
+                    <div class="md:w-[60rem] w-96 flex flex-col gap-5">
+                        <header>
+                            <h3 class="md:text-4xl text-2xl font-bold">Selamat Datang di Sistem Laporan Aduan SMK Negeri 1 Bangsri</h3>
+                        </header>
+                        <p class="md:w-full w-80">Ajukan Kritik dan Saran atau Keluhanmu Disini.</p>
+                        <div class="w-60">
+                            <a class="px-5 rounded-xl py-[0.60rem] bg-primary text-white" href="">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center w-full ">
+                        <img class="md:w-[28rem] w-[16rem] pointer-events-none" src="../src/img/toa.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container md:mx-auto mx-5">
+                <div class="md:min-h-screen flex md:flex-row flex-col-reverse items-center gap-10">
+                    <div class="imgage">
+                        <img class="md:w-[28rem] w-[16rem] pointer-events-none" src="../src/img/amplop.svg" alt="">
+                    </div>
+                    <div class="md:w-1/2 flex flex-col gap-5">
+                        <h3 class="text-4xl font-bold">Tentang SILaDu</h3>
+                        <p class="md:w-full w-[20rem]">SILaDu merupakan Sistem Informasi Laporan dan Aduan untuk Siswa/i SMK Negeri 1 Bangsri sebagai tempat untuk mengajukan Kritik & saran maupun keluhan. Bekerjasama dengan PT. Bogeng Media Prima, Ektrakurikuler Jurnalistik Eskasaba, dan Organisasi Siswa Intra Sekolah(OSIS). Sistem ini terintegrasi dengan WhatsappAPI memudahkan untuk kecepatan respon dan evaluasi.</p>
+                        <p md:w-full w-[20rem]>Nama siswa/i disamarkan untuk kebebasan dalam kritik & saran atau keluhannya. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container md:mx-auto md:p-0 px-5">
+                <div class="border rounded-3xl bg-secondary md:p-8 p-4 text-center flex flex-col gap-8">
+                    <h3 class="md:text-3xl text-xl font-bold">Yuk!, Aduin Keluhanmu ke SILaDu</h3>
+                    <div class="">
+                        <a class="px-10 rounded-xl md:text-3xl text-lg font-bold py-2 bg-primary text-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfz-3_em75MxTBnA1UoQjdchBFfraftCraaSdwnLXPa7pxF1Q/viewform">Ajukan Aduan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container md:mx-auto md text-center py-5">
+            <p id="footer" class="font-thin md:text-sm text-xs"></p>
+        </footer>
+        <h3>ikan ikan apa yang lucu?</h3>
+    </main>
+</body>
+    <script>
+        const footer = document.getElementById("footer");
+        //mendappatkan tahun sekarang
+        const year = new Date().getFullYear();
+
+        footer.innerHTML = `© ${year} SILaDu | SMKN 1 BANGSRI. All rights reserved.`
+    </script>
+</html>
